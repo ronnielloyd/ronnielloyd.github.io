@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+        .ronform {
+    /* Just to center the form on the page, use: margin: 0 auto;*/
+    margin: 20px;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 4px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+        <a href="https://en.wikipedia.org/wiki/Agriculture_in_ancient_Greece"> Greek Bois</a>
+        <img src="img/cherries.jpg"/> 
+<div>        
+        <h1>I like Turtles</h1>
+        <h2>What kind of turtle is your favorite?</h2>
+        <h3>Mine is the yellow eared slider</h3>
+        <h4>Because I found one when I was younger</h4>
+        <h5>His name was <i>Mikey</i></h5>
+        <h6>The soup was delicious. RIP Mikey</h6>
+</div>
+
+<div>        
+        <p>A paragraph is supposed to go here, would prefer a pair of giraffes tho.
+            <b>Am I right ladies!?!?</b></p>
+        
+        <p>Is this how I make a second paragraph? I just did p2. Hope it works.
+        Update: it kind of worked. but just doing another <'p'> worked. But then 
+        typing it in make a random paragraph in the middle of my sentence. I'll
+        have to figure out the proper way to mention a paragraph inside of this.
+        Give it a new, hip word probably. <em>PDizzles</em> is the first thing that comes
+        to mind.</p> 
+        
+        <p>P2 worked, lets see about p3. Also what is the difference between <i>italics</i>
+        and <em>emphasis</em> Can't really see the difference. I guess my eyes aren't 
+        <strong>strong</strong> enough to see the difference</p>
+</div>
+
+<div>        
+        <ul>Things to wish for with a Genie
+            <li>Money(for family)</li>
+            <li>A ballin house(for mom)</li>
+            <li>World Peace(for all)</li>
+            <li>My Dad's Love(for me)</li>
+        </ul>
+        
+        <ol>This my dad wished for
+            <li>Alcohol</li>
+            <li>Women</li>
+            <li>The ability to disappear</li>
+            <li>Hitting people up for money</li>
+        </ol>
+        
+        <dl>
+            <dt>Zombie</dt>
+            <dd>A very cold state of living</dd>
+            <dt>Vampire</dt>
+            <dd>A state of living devoid of garlic...
+            and 'stake'!</dd>
+            <dt>Old country</dt>
+            <dd>A very old state</dd>
+        </dl>
+</div>
+
+<div>        
+    <form class="ronform">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" />
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <textarea id="message"></textarea>
+    </div>
+
+    <div class="button">
+        <button type="submit">Send it Daddio</button>
+    </div>
+    </form>
+</div>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">People that bully me in my dreams</td></td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Michelle</td>
+                <td>Obama</td>
+            </tr>
+            <tr>
+                <td>Conan</td>
+                <td>O'brien</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Barker</td>
+            </tr>
+            <tr>
+                <td>Beck</td>
+                <td>Unknown</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="flex-row">
+    <div>There </div>
+    <div>is a</div>
+    <div>snake</div>
+    <div>in my</div>
+    <div>boot</div>
+</div>
+
+<div class="example-grid">
+  <div class="row">
+      <div class="col-md-2"><img src="/projects/well-of-html/img/cherries.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-8">Did you know? Cherries are the reason for my parent's divorce</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="/projects/well-of-html/img/black-currant.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-8">I think of Super Mario World when I look at these, so I don't trust them</div>
+  </div>
+  <div class="row">
+      <div class="col-md-2"><img src="/projects/well-of-html/img/apple-in-grass.jpg" class="row-img"></img>
+      </div>
+      <div class="col-md-8">snakes are really good at getting people to eat these.</div>
+  </div>
+</div>
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <script>
+        $(function () {
+            window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>
