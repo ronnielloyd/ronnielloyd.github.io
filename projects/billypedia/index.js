@@ -15,19 +15,24 @@ $(document).ready(function() {
                         // Top Rated //
  let topRated = data.discography.topRated;
     _.map(topRated, function(recording){
-        $('#list-top-rated').append($('<li>').text(recording.title));
-            });
-
+        $('#list-top-rated').append($('<li>').text(recording.title).click(function(event){
+            $('#top-rated-image').attr('src', recording.art);
+        }));
+    });
                         // create new section //
 
 $('<section>').attr('id', 'section-recordings').append($('<h3>').text('Recordings')).appendTo($('#sidebar'));
 $('#section-recordings').append($('<ul>').attr('id', 'list-recordings'));
 let recordings = data.discography.recordings;
     _.map(recordings, function(recordings){
-        var $listItem = $('<li>').addClass('recordings');
+        var $listItem = $('<li>').addClass('recordings').click(function(event){
+            $('#list-recordings').attr('src', recordings.art);
+            $('#image-recording').attr('src', recordings.art);
+        });;
         var $title = $('<div>').text(recordings.title).addClass('title');
         var $artist = $('<div>').text(recordings.artist);
-    // var $release =
+        
+        
     // var $artist =
             $listItem.append($title);
             $('#list-recordings').append($listItem);
@@ -35,16 +40,11 @@ let recordings = data.discography.recordings;
 
                         // images for recording lists //
 //above top rated//
-$('#section-top-rated').prepend($('<img>').attr('id', 'top-rated-image').attr('src', 'images/album/voice-in-the-night.jpg'));
-// $('<div>').attr('id', 'image-container-toprated').prependTo($('#section-top-rated'));
-// $('#image-container-toprated').attr('id', 'image-toprated');
-// $('#image-toprated').append('<img src= "images/album/voice-in-the-night.jpg"/>');
+$('#section-top-rated').prepend($('<img>').attr('id', 'top-rated-image').attr('src', topRated[0].art));
 
 //above recordings//
-$('#section-recordings').prepend($('<img>').attr('id', 'image-recording').attr('src', 'images/album/eastern-rebellion.jpg'))
-// $('<div>').attr('id', 'image-container-recording').prependTo($('#section-recordings'));
-// $('#image-container-recording').attr('id', 'image-recording');
-// $('#image-recording').append('<img src= "images/album/eastern-rebellion.jpg"/>');
+$('#section-recordings').prepend($('<img>').attr('id', 'image-recording').attr('src', recordings[0].art));
+
 
                         //Swap Billy Images//
 // can I just use each for this?
@@ -64,33 +64,45 @@ $('#image-billy').click(function(){
 
                         //Dynamically Swap Discography Art//
 //for Top Rated//
-var discographyTop = _.pluck(data.discography.topRated, 'art');
-$('#top-rated-image').click(function(){
-    var topRatedPic = $('#top-rated-image').attr('src');
-    var topIndex = _.indexOf(discographyTop,topRatedPic);
-    console.log(discographyTop, topRatedPic);
-        if(topIndex < discographyTop.length - 1){
-            topRatedPic = discographyTop[topIndex + 1];
-        }else {
-            topRatedPic = discographyTop[0];
-        }
-        console.log(discographyTop, topRatedPic);
-        $('#top-rated-image').attr('src', topRatedPic);
-});
-console.log(discographyTop);
+// var discographyTop = _.pluck(data.discography.topRated, 'art');
+// $('#top-rated-image').click(function(){
+//     var topRatedPic = $('#top-rated-image').attr('src');
+//     var topIndex = _.indexOf(discographyTop,topRatedPic);
+//     console.log(discographyTop, topRatedPic);
+//         if(topIndex < discographyTop.length - 1){
+//             topRatedPic = discographyTop[topIndex + 1];
+//         }else {
+//             topRatedPic = discographyTop[0];
+//         }
+//         console.log(discographyTop, topRatedPic);
+//         $('#top-rated-image').attr('src', topRatedPic);
+// });
+// console.log(discographyTop);
+
+
 
 //for Recordings //
-var records = _.pluck(data.discography.recordings, 'art');
-$('#image-recording').click(function(){
-    var recordingsPic = $('#image-recording').attr('src');
-    var recordingsIndex = _.indexOf(records,recordingsPic);
-        if(recordingsIndex < records.length - 1){
-            recordingsPic = records[recordingsIndex + 1];
-        } else {
-            recordingsPic = records[0];
-        } $('#image-recording').attr('src', recordingsPic);
-});
+// var records = _.pluck(data.discography.recordings, 'art');
+// $('#image-recording').click(function(){
+//     var recordingsPic = $('#image-recording').attr('src');
+//     var recordingsIndex = _.indexOf(records,recordingsPic);
+//         if(recordingsIndex < records.length - 1){
+//             recordingsPic = records[recordingsIndex + 1];
+//         } else {
+//             recordingsPic = records[0];
+//         } $('#image-recording').attr('src', recordingsPic);
+// });
 
+// $('li').click(function(event){
+//           var currentImg = $(event.currentTarget);
+//           var newImg = currentImg.attr('src');
+//           if (currentImg.attr('class') === 'recordings'){
+//               $('image-recording').attr('src', newImg);
+//               console.log(newImg);
+//           } else {
+//               $('#top-rated-image').attr('src', newImg);
+//           }
+//       });
                             //Build Table for Rider//
 
 var riderTable = function(riderTable){
