@@ -2,7 +2,7 @@
     {
         "id": 1,
         "type": "phone",
-        "image": "galaxy6-black.jpg",
+        "image": "/projects/product-project/img/product/thumbs/galaxy6-black.jpg",
         "desc": "Samsung Galaxy S6 SM-G920i Unlocked Cellphone, 32GB, Black Sapphire",
         "price": 545.63,
         "color": "Black Sapphire",
@@ -18,7 +18,7 @@
     {
         "id": 2,
         "type": "phone",
-        "image": "galaxy6-gold.jpg",
+        "image": "/projects/product-project/img/product/thumbs/galaxy6-gold.jpg",
         "desc": "Samsung Galaxy S6 G920I - 32GB - Factory Unlocked - GSM - Platinum Gold",
         "price": 545.00,
         "color": "Gold",
@@ -33,7 +33,7 @@
     {
         "id": 3,
         "type": "phone",
-        "image": "edge-white.jpg",
+        "image": "/projects/product-project/img/product/thumbs/edge-white.jpg",
         "desc": "Samsung Galaxy S6 Edge, White Pearl 32GB",
         "price": 699.99,
         "color": "White Pearl",
@@ -45,7 +45,7 @@
     {
         "id": 4,
         "type": "case",
-        "image": "galaxy6-case-clear.jpg",
+        "image": "/projects/product-project/img/product/thumbs/galaxy6-case-clear.jpg",
         "desc": "Samsung Galaxy S6 case, Nupro Lightweight Protective Snap-on Case for Galaxy S6 - Clear",
         "price": 9.99,
         "color": "Clear",
@@ -60,7 +60,7 @@
     {
         "id": 5,
         "type": "phone",
-        "image": "edge-gold.jpg",
+        "image": "/projects/product-project/img/product/thumbs/edge-gold.jpg",
         "desc": "Samsung Galaxy S6 Edge G925F Unlocked Cellphone, 32GB, Gold Platinum",
         "price": 669.79,
         "color": "Gold Platinum",
@@ -77,7 +77,7 @@
     {
         "id": 6,
         "type": "case",
-        "image": "galaxy6-case-green.jpg",
+        "image": "/projects/product-project/img/product/thumbs/galaxy6-case-green.jpg",
         "desc": "Samsung Galaxy S6 case, Nupro Lightweight Protective Snap-on Case for Galaxy S6 - Mint",
         "price": 8.99,
         "color": "Mint",
@@ -92,7 +92,7 @@
     {
         "id": 7,
         "type": "case",
-        "image": "galaxy6-case-black.jpg",
+        "image": "/projects/product-project/img/product/thumbs/galaxy6-case-black.jpg",
         "desc": "Samsung Galaxy S6 case, Nupro Lightweight Protective Snap-on Case for Galaxy S6 - Black",
         "price": 7.99,
         "color": "Black",
@@ -107,7 +107,7 @@
     {
         "id": 8,
         "type": "phone",
-        "image": "iphone-6-silver.jpg",
+        "image": "/projects/product-project/img/product/thumbs/iphone-6-silver.jpg",
         "desc": "Apple iPhone 6, Silver, 16 GB (Unlocked)",
         "price": 699.99,
         "color": "Silver",
@@ -124,7 +124,7 @@
     {
         "id": 9,
         "type": "phone",
-        "image": "iphone-6-plus-black.jpg",
+        "image": "/projects/product-project/img/product/thumbs/iphone-6-silver.jpg",
         "desc": "Apple iPhone 6 Plus 64GB 4G LTE Factory Unlocked GSM Smartphone - Space Gray",
         "price": 905.00,
         "color": "Space Gray",
@@ -142,7 +142,7 @@
     {
         "id": 10,
         "type": "case",
-        "image": "iphone-6-case-green.jpg",
+        "image": "/projects/product-project/img/product/thumbs/iphone-6-silver.jpg",
         "desc": "iPhone 6 Case, Lumsing™ Hybrid High Impact Dual Layer Armor Defender Case Protective Cover for Apple iPhone 6 (4.7 inch Screen) with Screen Protector (Mint Green-Grey)",
         "price": 7.99,
         "color": "Black",
@@ -159,7 +159,7 @@
     {
         "id": 11,
         "type": "case",
-        "image": "iphone-6-plus-case-gold.jpg",
+        "image": "/projects/product-project/img/product/thumbs/iphone-6-silver.jpg",
         "desc": "6 Plus Case, iPhone 6 Plus Case, SGM (TM) [Slim Hybrid] Case for iphone 6 Plus 5.5 [Clear Case] - iPhone 6 Plus Bumper Case - With SGM (TM) Microfiber Cleaning Cloth (Hot Pink)",
         "price": 12.99,
         "color": "Hot Pink",

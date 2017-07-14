@@ -5,11 +5,12 @@ $(document).ready(function() {
         
         // uncomment this to inspect all available data; delete when done //
         // console.log(data);
+     
      $('#section-quotes').css('background-color', 'grey').css('border-radius', '4px');
      $('.quote').css('color', 'white').css('font-style', 'italic');
      $('#quotes').css('padding-right', '10px').css('padding-left', '10px');
     $('#quotes:last-child').css('padding-bottom', '4px');
-    $('riderTable').css('background-color', 'green');
+    
     // $('#General Recordings').append()    
                        
                         // Top Rated //
